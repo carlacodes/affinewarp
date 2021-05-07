@@ -74,8 +74,8 @@ def rasters(data, subplots=(5, 6), fig=None, axes=None, figsize=(9*1.5, 5*1.5),
         # format axes
         ax.set_title('neuron {}'.format(n), color=foreground)
         ax.set_facecolor(background)
-        ax.set_xticks([])
-        ax.set_yticks([])
+        ax.set_xticks([times])
+        ax.set_yticks([trials])
         ax.set_xlim([data.tmin, data.tmax])
         for spine in ax.spines.values():
             spine.set_visible(False)
